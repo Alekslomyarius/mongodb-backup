@@ -1,0 +1,21 @@
+---
+backup_notifications:
+  enabled: true 
+  apprise_target: ""
+  requirements:
+    - python3
+    - python3-pip
+    - python3-setuptools
+rocketchat_backup:
+  aws_access_key: "" 
+  aws_secret_key: ""
+  s3_destination: ""
+  rocketchat_folder: /root/rocketchat
+  retain_count: 15
+  cron: 
+    name: "Rocketchat Backup"
+    minute: "0"
+    hour: "0"
+    day: "*"
+    weekday: "*"
+    month: "*"
